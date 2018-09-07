@@ -24,4 +24,5 @@ urlpatterns = [
     url(r'^logout$', LogOutView.as_view()),
     url(r'^core/', include('core.urls')),
     url(r'^dashboard/', include('dashboard.urls')),
+    url(r'^destinations/', include('destinations.urls')),
 ]
