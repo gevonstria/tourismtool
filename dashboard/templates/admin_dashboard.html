@@ -1,0 +1,364 @@
+{% extends "base.html" %}
+{% block content%}
+<!-- MAIN CONTENT-->
+<div class="main-content">
+    <div class="section__content section__content--p30">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="overview-wrap">
+                        <h2 class="title-1">overview</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row m-t-25">
+                <div class="col-sm-6 col-lg-3">
+                    <div class="overview-item overview-item--c1">
+                        <div class="overview__inner">
+                            <div class="overview-box clearfix">
+                                <div class="icon">
+                                    <i class="zmdi zmdi-account-o"></i>
+                                </div>
+                                <div class="text">
+                                    <h2>10368</h2>
+                                    <span>tourist</span>
+                                </div>
+                            </div>
+                            <div class="overview-chart">
+                                <canvas id="widgetChart1"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="overview-item overview-item--c2">
+                        <div class="overview__inner">
+                            <div class="overview-box clearfix">
+                                <div class="icon">
+                                    <i class="zmdi zmdi-shopping-cart"></i>
+                                </div>
+                                <div class="text">
+                                    <h2>388,688</h2>
+                                    <span>recent visitors</span>
+                                </div>
+                            </div>
+                            <div class="overview-chart">
+                                <canvas id="widgetChart2"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="overview-item overview-item--c3">
+                        <div class="overview__inner">
+                            <div class="overview-box clearfix">
+                                <div class="icon">
+                                    <i class="zmdi zmdi-calendar-note"></i>
+                                </div>
+                                <div class="text">
+                                    <h2>1,086</h2>
+                                    <span>decline</span>
+                                </div>
+                            </div>
+                            <div class="overview-chart">
+                                <canvas id="widgetChart3"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="au-card recent-report">
+                        <div class="au-card-inner">
+                            <h3 class="title-2">Historic Reports</h3>
+                            <div class="chart-info">
+                                <div class="chart-info__left">
+                                    <div class="chart-note">
+                                        <span class="dot dot--blue"></span>
+                                        <span>New Tourists</span>
+                                    </div>
+                                    <div class="chart-note mr-0">
+                                        <span class="dot dot--green"></span>
+                                        <span>Returning Tourists</span>
+                                    </div>
+                                </div>
+                                <div class="chart-info__right">
+                                    <div class="chart-statis">
+                                        <span class="index incre">
+                                            <i class="zmdi zmdi-long-arrow-up"></i>25%</span>
+                                        <span class="label">New Tourists</span>
+                                    </div>
+                                    <div class="chart-statis mr-0">
+                                        <span class="index decre">
+                                            <i class="zmdi zmdi-long-arrow-down"></i>10%</span>
+                                        <span class="label">Returning Tourists</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="recent-report__chart">
+                                <canvas id="recent-rep-chart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="au-card chart-percent-card">
+                        <div class="au-card-inner">
+                            <h3 class="title-2 tm-b-5">Destination Percentage</h3>
+                            <div class="row no-gutters">
+                                <div class="col-xl-6">
+                                    <div class="chart-note-wrap">
+                                        <div class="chart-note mr-0 d-block">
+                                            <span class="dot dot--blue"></span>
+                                            <span>Apo Reef</span>
+                                        </div>
+                                        <div class="chart-note mr-0 d-block">
+                                            <span class="dot dot--red"></span>
+                                            <span>Parola Park</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6">
+                                    <div class="percent-chart">
+                                        <canvas id="percent-chart"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8">
+                    <h2 class="title-1 m-b-25">Tourist Summary</h2>
+                    <div class="table-responsive table--no-card m-b-40">
+                        <table class="table table-borderless table-striped table-earning">
+                            <thead>
+                                <tr>
+                                    <th>date</th>
+                                    <th>name</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>2018-09-29 05:57</td>
+                                    <td>iPhone X 64Gb Grey</td>
+                                </tr>
+                                <tr>
+                                    <td>2018-09-28 01:22</td>
+                                    <td>Samsung S8 Black</td>
+                                </tr>
+                                <tr>
+                                    <td>2018-09-27 02:12</td>
+                                    <td>Game Console Controller</td>
+                                </tr>
+                                <tr>
+                                    <td>2018-09-26 23:06</td>
+                                    <td>iPhone X 256Gb Black</td>
+                                </tr>
+                                <tr>
+                                    <td>2018-09-25 19:03</td>
+                                    <td>USB 3.0 Cable</td>
+                                </tr>
+                                <tr>
+                                    <td>2018-09-29 05:57</td>
+                                    <td>Smartwatch 4.0 LTE Wifi</td>
+                                </tr>
+                                <tr>
+                                    <td>2018-09-24 19:10</td>
+                                    <td>Camera C430W 4k</td>
+                                </tr>
+                                <tr>
+                                    <td>2018-09-22 00:43</td>
+                                    <td>USB 3.0 Cable</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <h2 class="title-1 m-b-25">Top Destinations</h2>
+                    <div class="au-card au-card--bg-blue au-card-top-countries m-b-40">
+                        <div class="au-card-inner">
+                            <div class="table-responsive">
+                                <table class="table table-top-countries">
+                                    <tbody>
+                                        <tr>
+                                            <td>United States</td>
+                                            <td class="text-right">$119,366.96</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Australia</td>
+                                            <td class="text-right">$70,261.65</td>
+                                        </tr>
+                                        <tr>
+                                            <td>United Kingdom</td>
+                                            <td class="text-right">$46,399.22</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="copyright">
+                        <p>Copyright © 2018 <a href="https://vonz.tech">vonz.tech</a>. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+$(document).ready(function(){
+    // Recent Report
+    const new_tourists = 'rgba(0,181,233,0.8)'
+    const returning_tourists = 'rgba(0,173,95,0.8)'
+
+    var elements = 10
+    var new_tourists_data = [52, 60, 55, 50, 65, 80, 57, 70, 105, 115]
+    var returning_tourists_data = [102, 70, 80, 100, 56, 53, 80, 75, 65, 90]
+
+    var ctx = document.getElementById("recent-rep-chart");
+    if (ctx) {
+      ctx.height = 250;
+      var myChart = new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', ''],
+          datasets: [
+            {
+              label: 'New',
+              backgroundColor: new_tourists,
+              borderColor: 'transparent',
+              pointHoverBackgroundColor: '#fff',
+              borderWidth: 0,
+              data: new_tourists_data
+
+            },
+            {
+              label: 'Returning',
+              backgroundColor: returning_tourists,
+              borderColor: 'transparent',
+              pointHoverBackgroundColor: '#fff',
+              borderWidth: 0,
+              data: returning_tourists_data
+
+            }
+          ]
+        },
+        options: {
+          maintainAspectRatio: true,
+          legend: {
+            display: false
+          },
+          responsive: true,
+          scales: {
+            xAxes: [{
+              gridLines: {
+                drawOnChartArea: true,
+                color: '#f2f2f2'
+              },
+              ticks: {
+                fontFamily: "Poppins",
+                fontSize: 12
+              }
+            }],
+            yAxes: [{
+              ticks: {
+                beginAtZero: true,
+                maxTicksLimit: 5,
+                stepSize: 50,
+                max: 150,
+                fontFamily: "Poppins",
+                fontSize: 12
+              },
+              gridLines: {
+                display: true,
+                color: '#f2f2f2'
+
+              }
+            }]
+          },
+          elements: {
+            point: {
+              radius: 0,
+              hitRadius: 10,
+              hoverRadius: 4,
+              hoverBorderWidth: 3
+            }
+          }
+
+
+        }
+      });
+    }
+    //end of historic report
+
+    // Percent Chart
+    var ctx = document.getElementById("percent-chart");
+    if (ctx) {
+      ctx.height = 280;
+      var myChart = new Chart(ctx, {
+        type: 'doughnut',
+        data: {
+          datasets: [
+            {
+              label: "My First dataset",
+              data: [60, 40],
+              backgroundColor: [
+                '#00b5e9',
+                '#fa4251'
+              ],
+              hoverBackgroundColor: [
+                '#00b5e9',
+                '#fa4251'
+              ],
+              borderWidth: [
+                0, 0
+              ],
+              hoverBorderColor: [
+                'transparent',
+                'transparent'
+              ]
+            }
+          ],
+          labels: [
+            'Apo Reef',
+            'Parola Park'
+          ]
+        },
+        options: {
+          maintainAspectRatio: false,
+          responsive: true,
+          cutoutPercentage: 55,
+          animation: {
+            animateScale: true,
+            animateRotate: true
+          },
+          legend: {
+            display: false
+          },
+          tooltips: {
+            titleFontFamily: "Poppins",
+            xPadding: 15,
+            yPadding: 10,
+            caretPadding: 0,
+            bodyFontSize: 16
+          }
+        }
+      });
+    }
+  //end of pie chart dashboard
+});//end of document ready
+
+</script>>
+{% endblock %}
+<!-- END MAIN CONTENT-->
